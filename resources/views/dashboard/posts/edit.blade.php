@@ -32,7 +32,8 @@
 
                     <div class="mb-3">
                         <label for="category" class="form-label">Name</label>
-                        <select class="form-select" name="category_id" value="{{ old('category_id', $post->category_id) }}">
+                        <select class="form-select" name="category_id"
+                            value="{{ old('category_id', $post->category_id) }}">
                             @foreach ($categories as $category)
                                 <option value="{{ $category->id }}">{{ $category->name }}</option>
                             @endforeach

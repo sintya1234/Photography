@@ -20,6 +20,10 @@ use App\Http\Controllers\DashboardPostController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/latihan', function () {
+    return view('abc');
+});
+
 
 Route::get('/', function () {
     return view('home', [
@@ -36,9 +40,7 @@ Route::get('/about', function () {
     ]);
 });
 
-
 Route::get('/posts', [PostController::class, 'index']);
-
 
 //single post
 //Route::get('posts/{slug}', [PostController::class,'show']);
